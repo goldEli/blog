@@ -29,7 +29,7 @@
 
 ### 原型和原型链
 
-### 作用域和闭包
+### [作用域](https://github.com/goldEli/Front-end-Knowledge-Points/issues/1)和闭包
 
 ### 异步
 
