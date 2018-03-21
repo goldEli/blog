@@ -37,12 +37,12 @@
 
 ### 原型和原型链
 
-在 JavaScript 中万物皆对象。Null 是所有对象的源头，Null就像上帝，Function 和 Object 就是亚当和夏娃，它们通过 prototype 和 constructor 繁衍后代，prototype 提供基因，constructor 就是子宫。
+在 `JavaScript` 中万物皆对象。`Null` 是所有对象的源头，`Null` 就像上帝，`Function` 和 `Object` 就是亚当和夏娃，它们通过 `prototype` 和 `constructor` 繁衍后代，`prototype` 提供基因，`constructor` 就是子宫。
 
-* 所有的引用类型（数组、对象、函数），都具有对象特征（Null 除外）。
-* 所有的引用类型（数组、对象、函数），都有一个浏览器提供的 __proto__ 属性。
-* 所有函数都有一个 prototype 属性
-* 所有的引用类型（数组、对象、函数）的 __proto__ 都指向它的构造函数的 prototype 属性。
+* 所有的引用类型（数组、对象、函数），都具有对象特征（`Null` 除外）。
+* 所有的引用类型（数组、对象、函数），都有一个浏览器提供的 `__proto__` 属性。
+* 所有函数都有一个 `prototype` 属性
+* 所有的引用类型（数组、对象、函数）的 `__proto__` 都指向它的构造函数的 `prototype` 属性。
 
 用代码来描述：
 
@@ -77,7 +77,7 @@ console.log(obj.__proto__ === Object.prototype)
 
 当对象 `obj` 在访问属性的时候，会在自身属性中寻找，如果自身没有，就会通过 `obj.__proto__` （即构造函数的 `prototype`）中去寻找。如果还没有就会继续通过 `obj.__proto__.__proto__` 中去寻找，一直向上寻找，就形成了**原型链**。如果在最上层也没找到，就会返回 `undefined`。
 
-最上层是什么 —— Object.prototype.__proto__ === null
+最上层是什么 —— `Object.prototype.__proto__ === null`
 
 ### 作用域和闭包
 
