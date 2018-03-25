@@ -79,7 +79,9 @@ console.log(obj.__proto__ === Object.prototype)
 
 最上层是什么 —— Object.prototype.__proto__ === null
 
-### 作用域和闭包
+### <a herf="#scope">作用域</a>
+
+#### 作用域
 
 作用域的目的是确定变量的访问权限，也就是为了避免变量污染。
 
@@ -88,6 +90,54 @@ console.log(obj.__proto__ === Object.prototype)
 在ES6以前，JavaScript 只有全局作用域和函数作用域，没有块级作用域，不像 Java 那样，一个花括号就是一个作用域。
 
 在ES6中 引入了 let 关键字，才有了块级作用域。
+
+#### 作用域链
+
+当变量查找时，会从当前上下文中的变量对象中查找，如果没有，会从父级上下文的变量对象中查找，直到找到全局的变量。由多个执行上下文的变量对象构成的链表就叫作用域链
+
+#### 闭包
+
+闭包指的是，有权限访问访问其他作用域中变量的函数。
+
+理解闭包核心：**JavaScript的函数作用域是在函数创建的时候定义的，而不是在执行的时候创建的**
+
+看下面的例子：
+
+```
+function out() {
+	var name = "js"
+	return function inner(){
+		console.log(name)
+	}
+}
+var fn = out() // fn 引用了 out 的作用域
+fn() // 当 fn 执行的时候就可以访问到 out 的作用域中的 name 变量
+```
+
+out 执行时创建执行上下文，out 执行完后上下文被销毁了，为什么还能访问到呢？先来看看 JavaScript 的垃圾回收机制。
+
+##### 垃圾回收机制
+
+**引用计数**
+
+当声明一个变量，将一个引用类型赋值给该变量，则当前引用次数为1，如果同一个值赋给另一个变量，则引用次数加1。相反，如果拥有该值的变量拥有了其他值则减1，当值的引用次数为0时，垃圾回收期下次运行时，就会回收。
+
+下面这个例子：
+
+```
+function func() {
+	var a = new Object()
+	var b = new Object()
+	
+	a.someOtherObject = b
+	b.otherObject = a
+}
+// 这两个值引用次数都为2，永远不会回收
+```
+ 	
+**标记清除**
+	
+当函数中声明一个变量，则标记这个变量为“进入环境”，只要进入相应的环境你就可以访问到它。当变量离开环境时，则将其标记会“离开环境”
 
 ### 异步
 
@@ -110,3 +160,4 @@ console.log(obj.__proto__ === Object.prototype)
 ## 参考
 [Web 前端面试指南与高频考题解析](https://juejin.im/book/5a8f9ddcf265da4e9f6fb959)
 [冴羽博客](https://github.com/mqyqingfeng/Blog)
+[实现compose的五种思路](https://segmentfault.com/a/1190000011447164)
