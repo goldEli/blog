@@ -37,12 +37,32 @@ float 的设计初衷是为了图片的环绕效果，当图片设置了 `float:
 
 **破坏性**
 
+![](https://raw.githubusercontent.com/goldEli/Front-end-Knowledge-Points/master/imgs/2.png)
+
 如果子 div 设置了 float，会导致父 div 出现坍塌。因为设置 float 会让子 div 脱离文档流
 
 **包裹性**
 
+![](https://raw.githubusercontent.com/goldEli/Front-end-Knowledge-Points/master/imgs/1.png)
 
+div 属于块级元素，如果不设置宽度，会撑满整个宽度，当设置 `float:left` 时，会让 div 包裹文字。这就印证了它的设计初衷，让文字环绕图片，如果没有包裹性，它就无法紧贴文字。
 
+**清空空格**
+
+当几个图片在一排显示时，有留有空格。设置 float 让图片脱离文档流，既然都脱离文档流了，那么什么空格换行都跟他没关系了。
+
+**清除浮动**
+
+```
+.clearfix:after {
+    content: '';
+    display: table;
+    clear: both;
+}
+.clearfix {
+    *zoom: 1; /* 兼容 IE 低版本 */
+}
+```
 
 ### 定位
 
