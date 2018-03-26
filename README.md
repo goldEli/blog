@@ -7,9 +7,42 @@
 
 ### 选择器权重优先级
 
+* 内联样式：如 `style=""` 权重为1000
+* ID选择器： 如 `#box` 权重为100
+* 类、伪类和属性选择器： 如 `.box` `:hover` `[attribute]` 权重为10
+* 元素选择器和伪元素选择器：如 `p` `div` 权重为1
+* 通用选择器（*）、子选择器（<）、相邻同胞选择器（+）权重为0
+
+**权重值越大优先级越高，相同权重遵循后定义的覆盖先定义的**
+
 ### 盒模型
 
+三个核心：`padding`、`border`、`margin`
+
+盒子的宽度：内容宽度 + `padding`宽度 + `border`宽度 + `margin`宽度。改变任何一个都会改变整个宽度。
+
+如果设置了`box-sizing:border-box`，那么设置 `width:100px`时，这`100px` 包含了（内容 + `padding`宽度 + `border`宽度）
+
+#### 纵向 margin 重叠
+
+当两个 `div` 的 `margin` 为 20px，那么两个div的纵向的距离不是 40px，而是20px，因为纵向的 `margin` 会重叠。如果一个的比另一个的 margin 大，那么遵循大的吃小的原则。
+
 ### 浮动
+
+float 的设计初衷是为了图片的环绕效果，当图片设置了 `float:left` 文字会环绕图片周围。
+
+#### float + div
+
+人们发现 float + div 可以解决类似 table 的布局，所以 float 现在常常用来布局。
+
+**破坏性**
+
+如果子 div 设置了 float，会导致父 div 出现坍塌。因为设置 float 会让子 div 脱离文档流
+
+**包裹性**
+
+
+
 
 ### 定位
 
@@ -37,12 +70,12 @@
 
 ### 原型和原型链
 
-在 `JavaScript` 中万物皆对象。`Null` 是所有对象的源头，`Null` 就像上帝，`Function` 和 `Object` 就是亚当和夏娃，它们通过 `prototype` 和 `constructor` 繁衍后代，`prototype` 提供基因，`constructor` 就是子宫。
+在 JavaScript 中万物皆对象。Null 是所有对象的源头，Null就像上帝，Function 和 Object 就是亚当和夏娃，它们通过 prototype 和 constructor 繁衍后代，prototype 提供基因，constructor 就是子宫。
 
-* 所有的引用类型（数组、对象、函数），都具有对象特征（`Null` 除外）。
-* 所有的引用类型（数组、对象、函数），都有一个浏览器提供的 `__proto__` 属性。
-* 所有函数都有一个 `prototype` 属性
-* 所有的引用类型（数组、对象、函数）的 `__proto__` 都指向它的构造函数的 `prototype` 属性。
+* 所有的引用类型（数组、对象、函数），都具有对象特征（Null 除外）。
+* 所有的引用类型（数组、对象、函数），都有一个浏览器提供的 __proto__ 属性。
+* 所有函数都有一个 prototype 属性
+* 所有的引用类型（数组、对象、函数）的 __proto__ 都指向它的构造函数的 prototype 属性。
 
 用代码来描述：
 
@@ -77,7 +110,7 @@ console.log(obj.__proto__ === Object.prototype)
 
 当对象 `obj` 在访问属性的时候，会在自身属性中寻找，如果自身没有，就会通过 `obj.__proto__` （即构造函数的 `prototype`）中去寻找。如果还没有就会继续通过 `obj.__proto__.__proto__` 中去寻找，一直向上寻找，就形成了**原型链**。如果在最上层也没找到，就会返回 `undefined`。
 
-最上层是什么 —— `Object.prototype.__proto__ === null`
+最上层是什么 —— Object.prototype.__proto__ === null
 
 ### <a herf="#scope">作用域</a>
 
