@@ -66,9 +66,104 @@ div 属于块级元素，如果不设置宽度，会撑满整个宽度，当设�
 
 ### 定位
 
+可选属性 `static/relative/absolute/fixed`
+
+**absolute**
+
+* 脱离文档流
+* 包裹性
+* 跟随性
+* 悬浮页面上方，挡住下面的内容
+
 ### flex布局
 
+基本使用：
+
+```
+<style type="text/css">
+    .container {
+      display: flex;
+    }
+    .item {
+        border: 1px solid #000;
+        flex: 1;
+    }
+</style> 
+<div class="container"> 
+	<div class="item">aaa</div> 
+	<div class="item" style="flex: 2">bbb</div> 
+	<div class="item">ccc</div> 
+	<div class="item">ddd</div> 
+</div>
+```
+![](https://user-gold-cdn.xitu.io/2018/2/23/161c1066b5766be2?imageView2/0/w/1280/h/960/ignore-error/1)
+
 ### 如何实现居中对齐
+
+**水平居中**
+
+* inline 居中
+
+```
+text-aligin: center 	
+```
+* block 居中
+
+```
+.container {
+    text-align: center; 
+}
+.item {
+    width: 1000px;
+    margin: auto; 
+}
+```
+
+* 绝对定位居中
+
+```
+.container {
+    width: 500px;
+    height: 100px;
+    position: relative; 
+}
+.item {
+    width: 100px;
+    height: 100px; 
+    position: absolute;
+    left: 50%;
+    margin-left: -50px
+}
+```
+**垂直居中**
+
+* inline 居中
+
+```
+.container {
+   height: 50px;
+   line-height: 50px;
+}
+```
+
+* block 居中
+
+可以用绝对定位居中（同上），也可以用 `margin:auto`，不需要提前知道尺寸，且通用性好。
+
+```
+.container { position: relative; height: 300px; } 
+.item { 
+	width: 100px; 
+	height: 50px; 
+	position: absolute; 
+	left: 0; 
+	top: 0; 
+	right: 0; 
+	bottom: 0; 
+	margin: auto; 
+}
+```
+
 
 ### 语义化
 
@@ -132,7 +227,7 @@ console.log(obj.__proto__ === Object.prototype)
 
 最上层是什么 —— Object.prototype.__proto__ === null
 
-### <a herf="#scope">作用域</a>
+### 作用域
 
 #### 作用域
 
