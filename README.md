@@ -167,9 +167,37 @@ text-aligin: center
 
 ### 语义化
 
+让人和机器更容易读懂代码
+
+比如 h1 p header strong 这些标签，方便搜索引擎爬网页
+
 ### CSS动画
 
+```
+@keyframes testAnimation { 
+    0% {background: red; left:0; top:0;} 
+    25% {background: yellow; left:200px; top:0;} 
+    50% {background: blue; left:200px; top:200px;} 
+    75% {background: green; left:0; top:200px;} 
+    100% {background: red; left:0; top:0;} 
+}
+div {
+    width: 100px;
+    height: 50px;
+    position: absolute;
+
+    animation-name: testAnimation;
+    animation-duration: 5s;
+}
+```
+
 ### 重绘和回流
+
+重绘：指的是浏览器重新绘制样式，比如颜色，背景等，不会脱离文本流。
+
+回流：会脱离文本流，当元素的大小，或者属性发生改变，会导致浏览器重新渲染部分或者全部文档
+
+相比之下，回流比重绘更消耗性能。编码时，要尽量避免回流。
 
 ## JavaScript
 
@@ -291,7 +319,34 @@ function func() {
 
 ### ES6/7常用特性
 
-## 浏览器
+## web-api
+
+### BOM
+
+浏览器提供的一些接口，比如 `location`、`screen`、`navigator`、 `history`。
+
+### DOM
+
+起初使用 xml 来描述页面结构，为了标准化，推出了 html，当浏览器通过 url 请求服务器，服务器返回 html 给浏览器，浏览器和 JavaScript 都不认识 html，所以浏览器会把 html 转换成 DOM，DOM 是一个树结构
+
+**获取 DOM**
+
+```
+// 通过 id 获取
+var dom = document.getElementById('box')
+
+// 
+```
+
+**property 和 attribute的区别**
+
+* property
+
+DOM 节点就是一个 js 对象，比如一个 p 节点，可以拥有 `class` `style` 等属性
+
+* attribute
+
+属于 html 的属性，需要通过 getAttribute 和 setAttribute 来操作属性，改操作会造成重绘和重排，所以尽量避免频繁操作。
 
 ## Framework
 
