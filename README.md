@@ -15,7 +15,7 @@
 
 ## 工具
 
-## 算法
+## [算法相关](https://github.com/goldEli/Front-end-Knowledge-Points/issues/6)
 
 ## 参考
 
