@@ -26,3 +26,5 @@
 [实现compose的五种思路](https://segmentfault.com/a/1190000011447164)
 
 [10 分钟理解 BFC 原理](https://zhuanlan.zhihu.com/p/25321647)
+
+[async 函数的含义和用法](http://www.ruanyifeng.com/blog/2015/05/async.html)
