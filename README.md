@@ -15,6 +15,9 @@
 
 * [算法相关](https://github.com/goldEli/Front-end-Knowledge-Points/issues/6)
 
+* [Code Snippet](https://github.com/goldEli/Front-end-Knowledge-Points/issues/8)
+
+
 ### 参考
 
 [Web 前端面试指南与高频考题解析](https://juejin.im/book/5a8f9ddcf265da4e9f6fb959)
@@ -27,3 +30,5 @@
 
 [async 函数的含义和用法](http://www.ruanyifeng.com/blog/2015/05/async.html)
 [Learn Enough React For The Interview](https://medium.com/bb-tutorials-and-thoughts/learn-enough-react-for-the-interview-f460a2fa3aeb)
+
+[一个合格的中级前端工程师必须要掌握的 28 个 JavaScript 技巧](https://juejin.im/post/5cef46226fb9a07eaf2b7516)
