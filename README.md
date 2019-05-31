@@ -1,7 +1,7 @@
 # Front-end-Knowledge-Points
 本项目的目的是整理前端知识点
 
-[知识点的思维导图](http://naotu.baidu.com/file/dbef5fd56e74b51ead825bcd83f38a56?token=2f6920a3f522cca8)
+> [知识点的思维导图](http://naotu.baidu.com/file/dbef5fd56e74b51ead825bcd83f38a56?token=2f6920a3f522cca8)
 
 * [HTML + CSS](https://github.com/goldEli/Front-end-Knowledge-Points/issues/2)
 
