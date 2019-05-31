@@ -3,21 +3,17 @@
 
 [知识点的思维导图](http://naotu.baidu.com/file/dbef5fd56e74b51ead825bcd83f38a56?token=2f6920a3f522cca8)
 
-### [HTML + CSS](https://github.com/goldEli/Front-end-Knowledge-Points/issues/2)
+* [HTML + CSS](https://github.com/goldEli/Front-end-Knowledge-Points/issues/2)
 
-### [JavaScript](https://github.com/goldEli/Front-end-Knowledge-Points/issues/3)
+* [JavaScript](https://github.com/goldEli/Front-end-Knowledge-Points/issues/3)
 
-### [web-api](https://github.com/goldEli/Front-end-Knowledge-Points/issues/4)
+* [web-api](https://github.com/goldEli/Front-end-Knowledge-Points/issues/4)
 
-### [浏览器相关](https://github.com/goldEli/Front-end-Knowledge-Points/issues/5)
+* [浏览器相关](https://github.com/goldEli/Front-end-Knowledge-Points/issues/5)
 
-## Framework
+* [React](https://github.com/goldEli/Front-end-Knowledge-Points/issues/7)
 
-### [React](https://github.com/goldEli/Front-end-Knowledge-Points/issues/7)
-
-### 工具
-
-### [算法相关](https://github.com/goldEli/Front-end-Knowledge-Points/issues/6)
+* [算法相关](https://github.com/goldEli/Front-end-Knowledge-Points/issues/6)
 
 ### 参考
 
