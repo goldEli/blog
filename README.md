@@ -17,7 +17,7 @@
 
 * [Code Snippet](https://github.com/goldEli/Front-end-Knowledge-Points/issues/8)
 
-* [Q&A](https://github.com/goldEli/Front-end-Knowledge-Points/issues/9)
+* [Q&A](https://github.com/goldEli/Front-end-Knowledge-Points/tree/master/Q%26A)
 
 
 ### 参考
