@@ -11,7 +11,7 @@
 
 * [浏览器相关](https://github.com/goldEli/Front-end-Knowledge-Points/issues/5)
 
-* [React](https://github.com/goldEli/Front-end-Knowledge-Points/issues/7)
+* [React](https://github.com/goldEli/Front-end-Knowledge-Points/blob/master/React.md)
 
 * [算法相关](https://github.com/goldEli/Front-end-Knowledge-Points/issues/6)
 
