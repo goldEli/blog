@@ -123,4 +123,6 @@ When it comes to SPA application. you load the **index.html** for the first time
 
 React use Virtual DOM to construct DOM efficiently, which makes it a very complicated and time-consuming task of DOM manipulation easier for us. React abstracts away all this from developers to build the efficient UI with the help of Virtual DOM.
  
+* **How dose Virtual DOM works?**
 
+Virtual DOM is nothing but javaScirpt object representation of real DOM. Updating javaScript object is easier and faster when compared with updating the real DOM. With this in mind, let's see how it works.
