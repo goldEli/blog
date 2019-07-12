@@ -126,3 +126,7 @@ React use Virtual DOM to construct DOM efficiently, which makes it a very compli
 * **How dose Virtual DOM works?**
 
 Virtual DOM is nothing but javaScirpt object representation of real DOM. Updating javaScript object is easier and faster when compared with updating the real DOM. With this in mind, let's see how it works.
+
+## What is JSX?
+
+JSX is a syntax extension to javascript. It's a template language with the full power of javascirpt. It produces React elements which will be rendered in the DOM. React recommands use JSX for components. In JSX, we combine both HTML and Javascript and produces React elements which can be rendered in the DOM.
