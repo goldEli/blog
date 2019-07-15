@@ -127,6 +127,22 @@ React use Virtual DOM to construct DOM efficiently, which makes it a very compli
 
 Virtual DOM is nothing but javaScirpt object representation of real DOM. Updating javaScript object is easier and faster when compared with updating the real DOM. With this in mind, let's see how it works.
 
+React keeps the entire copy of DOM as a virtual DOM.
+
+![](https://miro.medium.com/max/1400/1*rapZW61W1dr0cEpOXqJaEA.png)
+
+Whenever there is an update comes, It miantains tow virtual DOMs to compare the previous state and current state and figures out what objects have ben changed. For instance, paragraph text changed to change.
+
+![](https://miro.medium.com/max/1400/1*xVfZDNDw7ufCmGDXlhQLdw.png)
+
+Now It finds out the changes by comparing two virtual DOMs and sends throse updates to real DOM.
+
+![](https://miro.medium.com/max/1400/1*chGf5cb0BlZrRX9wEulKjA.png)
+
+Once real DOM updates, the UI updates as well.
+
+![](https://miro.medium.com/max/1400/1*l_Q6PS3EZodhJdrOirAw7w.png)
+
 ## What is JSX?
 
 JSX is a syntax extension to javascript. It's a template language with the full power of javascirpt. It produces React elements which will be rendered in the DOM. React recommands use JSX for components. In JSX, we combine both HTML and Javascript and produces React elements which can be rendered in the DOM.
