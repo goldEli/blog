@@ -158,6 +158,6 @@ function App() {
 }
 ````
 
-## Component and different types
+## Component and Different Types
 
 Everything is a component in React. We usually break up the entire logic of the application into small individual pieces. We call each individual piece as a component. In general, A component is a javascript function which takes the input, process it and return React element which renders in the UI.
