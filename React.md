@@ -147,7 +147,7 @@ Once real DOM updates, the UI updates as well.
 
 JSX is a syntax extension to javascript. It's a template language with the full power of javascirpt. It produces React elements which will be rendered in the DOM. React recommands use JSX for components. In JSX, we combine both HTML and Javascript and produces React elements which can be rendered in the DOM.
 
-For example, we can see how we combine javascript and HTML. If there is any dynamic variable included in HTML, we should use the expresion language **`{}`**
+Here is an example of JSX, we can see how we are combining javascript and HTML. If there is any dynamic variable included in HTML, we should use the expression language **`{}`**
 
 ````jsx
 function App() {
@@ -158,6 +158,6 @@ function App() {
 }
 ````
 
-## Component and types
+## Component and different types
 
-Everything is a component in React. We usually break up the entire logic of indivual pieces. We call each indivual piece as a component. In general, component is a javascript function which takes the input, process it and return React element which renders in the UI.
+Everything is a component in React. We usually break up the entire logic of the application into small individual pieces. We call each individual piece as a component. In general, A component is a javascript function which takes the input, process it and return React element which renders in the UI.
