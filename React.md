@@ -161,3 +161,17 @@ function App() {
 ## Component and Different Types
 
 Everything is a component in React. We usually break up the entire logic of the application into small individual pieces. We call each individual piece as a component. In general, A component is a javascript function which takes the input, process it and return React element which renders in the UI.
+
+There are different types of components, let's see throse in detail.
+
+### Functional / Stateless / Presentational Components
+
+A functional or stateless component is pure function which takes props or no props and returns React element. There are pure functions which don't have any side effects. Those components don't have state and lifecycle methods。Here is an example.
+
+```jsx
+import React from 'react'
+
+export const App = (props) => {
+  return <div>{props.name}</div>
+}
+```
