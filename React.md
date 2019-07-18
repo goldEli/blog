@@ -175,3 +175,27 @@ export const App = (props) => {
   return <div>{props.name}</div>
 }
 ```
+### Class or Stateful Components
+
+Class or stateful components hava state or lifecycle methods and it can change the state of the component with the help of `this.setState`. Class components create by extending `React.component` and it is initialized in constructor and might have child components as well. Here is an example.
+
+```jsx
+import React from 'react
+import ToDoList from './ToDoList'
+
+export default class Dashbord extends React.component{
+  constructor(props){
+   super(props)
+   this.state = {}
+  }
+  render() {
+   return(
+    <div >
+     <ToDoList />
+    </div>
+   )
+  }
+    
+  }
+}
+```
