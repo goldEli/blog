@@ -199,3 +199,56 @@ export default class Dashbord extends React.component{
   }
 }
 ```
+
+### Controlled Component
+
+Controlled component is technique which handles input form, Form elements typically maintain there own state, React maintain state in the state property of the component. we can combine both to control input forms, This is call it a controlled component. So, In controlled component form data is handled by React component.
+
+Here is an example. when user enter the name on todo item and we can invoking javascript function `onChange()` to caputure the value of every keystroke and put it into the state so that we can use the data from the state in `onSubmit()`.
+
+```jsx
+import React from 'react';
+import Form from 'react-bootstrap/Form';
+import Button from 'react-bootstrap/Button';
+import Row from 'react-bootstrap/Row';
+import Col from 'react-bootstrap/Col';
+
+export class ToDoForm extends React.Component {
+    constructor(props) {
+      super(props);
+      this.state = {value: ''};
+  
+      this.handleChange = this.handleChange.bind(this);
+      this.handleSubmit = this.handleSubmit.bind(this);
+    }
+  
+    handleChange(event) {
+      this.setState({value: event.target.value});
+    }
+  
+    handleSubmit(event) {
+      alert('A name was submitted: ' + this.state.value);
+      event.preventDefault();
+    }
+  
+    render() {
+      return (
+          <div className="todoform">
+            <Form>
+                <Form.Group as={Row} controlId="formHorizontalEmail">
+                    <Form.Label column sm={2}>
+                    <span className="item">Item</span>
+                    </Form.Label>
+                    <Col sm={5}>
+                        <Form.Control type="text" placeholder="Todo Item" />
+                    </Col>
+                    <Col sm={5}>
+                        <Button variant="primary" type="submit">Add</Button>
+                    </Col>
+                </Form.Group>
+            </Form>
+         </div>
+      );
+    }
+  }
+```
