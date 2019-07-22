@@ -255,7 +255,7 @@ export class ToDoForm extends React.Component {
 
 ### Uncontrolled Component
 
-Most of times it is recommended to use controlled component, but there is a alternative approach called uncontrolled component to handle form data for this by using `Ref`. In controlled component, `Ref` used to access form value directly form the DOM instead of event henders.
+Most of times it is recommended to use a controlled component, but there is an alternative approach called uncontrolled component to handle form data for this by using `Ref`. In controlled component, `Ref` used to access form value directly from the DOM instead of event hendles.
 
 Here is an example. We create the same form with `Ref` instead of using React state. Wo define `Ref` with `React.createRef` and pass that input form and accessing form value directly from the DOM in `hanldeSubmit` method.
 
