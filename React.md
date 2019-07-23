@@ -301,3 +301,11 @@ export class ToDoForm extends React.Component {
     }
   }
 ```
+
+### Container Components
+
+Container components are the components which deal with feching data, subscribing to redux `store`. They contain presentational components and other container components. But they don't have any HTML in it.
+
+### Higher Order Components
+
+Higher Order Components are the components which take a component as a argument and produce another component. Redux `connect` is the example of a higher order component. This is a powerful technique for producing reusable components.
