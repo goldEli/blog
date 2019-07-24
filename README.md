@@ -20,7 +20,7 @@
 * [Code Snippet](https://github.com/goldEli/Front-end-Knowledge-Points/issues/8)
 
 
-### 参考
+### Reference
 
 [Web 前端面试指南与高频考题解析](https://juejin.im/book/5a8f9ddcf265da4e9f6fb959)
 
@@ -37,3 +37,5 @@
 [一个合格的中级前端工程师必须要掌握的 28 个 JavaScript 技巧](https://juejin.im/post/5cef46226fb9a07eaf2b7516)
 
 [前端面试每日 3+1（每日三问）](https://github.com/haizlin/fe-interview)
+
+[工作日每天一道大厂前端面试题](https://github.com/Advanced-Frontend/Daily-Interview-Question?utm_source=gold_browser_extension)
