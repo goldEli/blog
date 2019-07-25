@@ -10,3 +10,8 @@
 ### 2019年7月24日
 * [写一个方法去掉字符串中的空格](https://github.com/haizlin/fe-interview/issues/6#issuecomment-514470850)
 * [小偷总共能偷多少钱？（House Robber）](https://github.com/goldEli/Front-end-Knowledge-Points/issues/15)
+
+### 2019年7月25日
+* [观察者模式如何实现](https://github.com/zlx362211854/daily-study/issues/1#issuecomment-514636701)
+* [ajax产生二次请求原因及解决方式](https://github.com/zlx362211854/daily-study/issues/3)
+* [纯CSS实现三角形](https://github.com/goldEli/Front-end-Knowledge-Points/issues/16)
