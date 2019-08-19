@@ -8,6 +8,9 @@
 * [2. 原型和原型链](https://github.com/goldEli/blog/issues/23) —— 2019-08-19 update: 2019-08-19
 * [3. this](https://github.com/goldEli/blog/issues/22) —— 2019-08-19 update: 2019-08-19
 * [4. 《图解算法》](https://github.com/goldEli/blog/issues/20) —— 2019-08-07 update: 2019-08-08
+
+* test
+
 * [5. ++i 与 i++ 的区别?](https://github.com/goldEli/blog/issues/19) —— 2019-08-05 update: 2019-08-05
 * [6. 任务 vs 微任务](https://github.com/goldEli/blog/issues/18) —— 2019-07-30 update: 2019-07-30
 * [7. 《数学之美》](https://github.com/goldEli/blog/issues/17) —— 2019-07-25 update: 2019-07-25
