@@ -74,6 +74,7 @@ const replaceQA = (content, allIssues) => {
 }
 
 const pushReadMe = () => {
+  execSync('git pull');
   execSync('git add README.md');
   execSync(`git commit -m "modify README 💐💐💐💐💐💐"`);
   execSync('git push origin master');
