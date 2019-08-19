@@ -24,7 +24,7 @@ const getAllIssues = async () => {
         const items = data.map((item, index) => {
           const { html_url, title, created_at, updated_at } = item;
           return `* [${index +
-            1}. ${title}](${html_url}) —— ${created_at}`;
+            1}. ${title}](${html_url}) —— ${moment(created_at).format('YYYY-MM-DD')} update: ${moment(updated_at).format('YYYY-MM-DD')}`;
         });
         resolve(items);
       })
@@ -91,8 +91,13 @@ app.post('/github', async (req, res) => {
   const content = await readReadMe(readMePath);
   const newContent = replaceQA(content, allIssues)
   const state = await writeToReadMe(readMePath, newContent)
-  state === "success" && pushReadMe()
-  res.send("success");
+  try {
+    state === "success" && pushReadMe()
+  } catch (error) {
+    console.log(error)
+  } finally{
+    res.send("success"); 
+  }
 })
 
 app.listen(port, () => console.log(`Example app listening on port ${port}!`))
