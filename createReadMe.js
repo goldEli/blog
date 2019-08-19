@@ -9,11 +9,6 @@ var execSync = require('child_process').execSync;
 const app = express()
 const port = 3000
 
-// headers: new Headers({
-//   Authorization: "token ef9b1c1e6be20820298e44e4fedb2dc839e48a6b",
-//   "Content-Type": "application/x-www-form-urlencoded"
-// })
-
 const getAllIssues = async () => {
   return new Promise((resolve, reject) => {
     axios
