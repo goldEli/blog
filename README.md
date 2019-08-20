@@ -4,28 +4,27 @@
 > [知识点的思维导图](http://naotu.baidu.com/file/dbef5fd56e74b51ead825bcd83f38a56?token=2f6920a3f522cca8)
 
 ### Q&A
-* [1. 22.校验代码括弧是否有效](https://github.com/goldEli/blog/issues/33) —— 2019-08-20 update: 2019-08-20
-* [2. 123](https://github.com/goldEli/blog/issues/32) —— 2019-08-19 update: 2019-08-19
-* [3. 原型和原型链](https://github.com/goldEli/blog/issues/23) —— 2019-08-19 update: 2019-08-19
-* [4. this](https://github.com/goldEli/blog/issues/22) —— 2019-08-19 update: 2019-08-19
-* [5. 《图解算法》](https://github.com/goldEli/blog/issues/20) —— 2019-08-07 update: 2019-08-08
-* [6. ++i 与 i++ 的区别?](https://github.com/goldEli/blog/issues/19) —— 2019-08-05 update: 2019-08-05
-* [7. 任务 vs 微任务](https://github.com/goldEli/blog/issues/18) —— 2019-07-30 update: 2019-07-30
-* [8. 《数学之美》](https://github.com/goldEli/blog/issues/17) —— 2019-07-25 update: 2019-07-25
-* [9. 纯CSS实现三角形](https://github.com/goldEli/blog/issues/16) —— 2019-07-25 update: 2019-07-25
-* [10. House robber](https://github.com/goldEli/blog/issues/15) —— 2019-07-24 update: 2019-07-24
-* [11. 用递归算法实现，数组长度为5且元素的随机数在2-32间不重复的值](https://github.com/goldEli/blog/issues/14) —— 2019-07-23 update: 2019-07-24
-* [12. 圣杯,双飞翼布局](https://github.com/goldEli/blog/issues/13) —— 2019-07-23 update: 2019-07-24
-* [13. 页面导入样式 Link 和 @import 的区别](https://github.com/goldEli/blog/issues/12) —— 2019-07-23 update: 2019-07-24
-* [14. meta 标签的理解](https://github.com/goldEli/blog/issues/11) —— 2019-07-23 update: 2019-07-24
-* [15. what is different between combination and permutation?](https://github.com/goldEli/blog/issues/10) —— 2019-07-23 update: 2019-07-24
-* [16. Code Snippet](https://github.com/goldEli/blog/issues/8) —— 2019-05-31 update: 2019-05-31
-* [17. React](https://github.com/goldEli/blog/issues/7) —— 2019-05-31 update: 2019-08-20
-* [18. 算法相关](https://github.com/goldEli/blog/issues/6) —— 2018-04-08 update: 2018-04-09
-* [19. 浏览器相关](https://github.com/goldEli/blog/issues/5) —— 2018-04-02 update: 2018-04-04
-* [20. web-api](https://github.com/goldEli/blog/issues/4) —— 2018-03-29 update: 2018-03-29
-* [21. JavaScript](https://github.com/goldEli/blog/issues/3) —— 2018-03-29 update: 2018-04-28
-* [22. HTML + CSS](https://github.com/goldEli/blog/issues/2) —— 2018-03-29 update: 2018-04-04
+* [1. 123](https://github.com/goldEli/blog/issues/32) —— 2019-08-19
+* [2. 原型和原型链](https://github.com/goldEli/blog/issues/23) —— 2019-08-19
+* [3. this](https://github.com/goldEli/blog/issues/22) —— 2019-08-19
+* [4. 《图解算法》](https://github.com/goldEli/blog/issues/20) —— 2019-08-07
+* [5. ++i 与 i++ 的区别?](https://github.com/goldEli/blog/issues/19) —— 2019-08-05
+* [6. 任务 vs 微任务](https://github.com/goldEli/blog/issues/18) —— 2019-07-30
+* [7. 《数学之美》](https://github.com/goldEli/blog/issues/17) —— 2019-07-25
+* [8. 纯CSS实现三角形](https://github.com/goldEli/blog/issues/16) —— 2019-07-25
+* [9. House robber](https://github.com/goldEli/blog/issues/15) —— 2019-07-24
+* [10. 用递归算法实现，数组长度为5且元素的随机数在2-32间不重复的值](https://github.com/goldEli/blog/issues/14) —— 2019-07-23
+* [11. 圣杯,双飞翼布局](https://github.com/goldEli/blog/issues/13) —— 2019-07-23
+* [12. 页面导入样式 Link 和 @import 的区别](https://github.com/goldEli/blog/issues/12) —— 2019-07-23
+* [13. meta 标签的理解](https://github.com/goldEli/blog/issues/11) —— 2019-07-23
+* [14. what is different between combination and permutation?](https://github.com/goldEli/blog/issues/10) —— 2019-07-23
+* [15. Code Snippet](https://github.com/goldEli/blog/issues/8) —— 2019-05-31
+* [16. React](https://github.com/goldEli/blog/issues/7) —— 2019-05-31
+* [17. 算法相关](https://github.com/goldEli/blog/issues/6) —— 2018-04-08
+* [18. 浏览器相关](https://github.com/goldEli/blog/issues/5) —— 2018-04-02
+* [19. web-api](https://github.com/goldEli/blog/issues/4) —— 2018-03-29
+* [20. JavaScript](https://github.com/goldEli/blog/issues/3) —— 2018-03-29
+* [21. HTML + CSS](https://github.com/goldEli/blog/issues/2) —— 2018-03-29
 ### Reference
 
 [Web 前端面试指南与高频考题解析](https://juejin.im/book/5a8f9ddcf265da4e9f6fb959)
