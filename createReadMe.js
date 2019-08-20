@@ -19,7 +19,7 @@ const getAllIssues = async () => {
         const items = data.map((item, index) => {
           const { html_url, title, created_at, updated_at } = item;
           return `* [${index +
-            1}. ${title}](${html_url}) —— ${moment(created_at).format('YYYY-MM-DD')} update: ${moment(updated_at).format('YYYY-MM-DD')}`;
+            1}. ${title}](${html_url}) —— ${moment(created_at).format('YYYY-MM-DD')}`;
         });
         resolve(items);
       })
@@ -76,7 +76,7 @@ const replaceQA = (content, allIssues) => {
 const pushReadMe = () => {
   execSync('git pull');
   execSync('git add README.md');
-  execSync(`git commit -m "modify README 💐💐💐💐💐💐"`);
+  execSync(`git commit -m "${moment().format('LLLL')} modify README 💐💐💐💐💐💐"`);
   execSync('git push origin master');
 }
 
